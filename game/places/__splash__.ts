@@ -52,6 +52,9 @@ if (game.state.currentPlace != "__start__") {
 
 */
 
+
+game.preloadResources
+
 if (game.state.currentPlace != "__start__") {
     // we have already played the game before
     place.get("reset_no").hide()
