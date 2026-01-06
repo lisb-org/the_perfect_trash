@@ -1,13 +1,15 @@
 //place.get('bg_dumpster').hide()
 //place.get('bg_trashcan').hide()
 
+/*
 if (game.state.hadLastDialog) { // OUTRO
     place.get('bg_dumpster').show()
     place.get('bg_trashcan').show()
     place.get('bg_play').hide()
     place.get('bg_symbol_play').hide()
 }
-
+*/
+/*
 place.get('load').hide()
 async function loadGame() {
     place.get('play').hide()
@@ -20,14 +22,18 @@ async function loadGame() {
             }
         })
         game.start();
-}
+}*/
+
+
+/*
+
 
 if (game.state.currentPlace != "__start__") {
     // we have already played the game before
     place.get("play").hide()
 
     place.get("continue").onClick(async () => {
-        await loadGame()
+        //await loadGame()
         game.start();
     })
     place.get("reset").onClick(() => {
@@ -39,8 +45,39 @@ if (game.state.currentPlace != "__start__") {
     place.get("continue").hide()
 
     place.get('play').onClick(async () => {
-        await loadGame()
+       // await loadGame()
         game.start();
     })    
 }
 
+*/
+
+if (game.state.currentPlace != "__start__") {
+    // we have already played the game before
+    place.get("reset_no").hide()
+    place.get("coverup").show()
+    place.get("t_continue").show()
+
+    place.get('play').onClick(async () => {
+       // await loadGame()
+        game.start();
+    })    
+   
+    place.get("reset").onClick(() => {
+        game.reset();
+    })
+} else {
+    // we are playing the game for the first time or have just reset it...
+    place.get("reset_no").show()
+    place.get("coverup").hide()
+    place.get("t_continue").hide()
+
+
+    //place.get("reset").hide()
+    //place.get("continue").hide()
+
+    place.get('play').onClick(async () => {
+       // await loadGame()
+        game.start();
+    })    
+}

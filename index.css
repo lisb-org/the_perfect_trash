@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    pointer-events: visiblePainted;
+}
+
+html, body, #viewport, #page, #page > svg {
+    width: 100lvw;
+    height: 100lvh;
+    font-family: sans-serif;
+}
+
+#page > svg {
+    max-width: 100lvw;
+    max-height: 100lvh;
+}
+
+
+@keyframes pulseKeyframes {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+.pulse {
+    transform-origin: 5% 50%;
+    animation: pulseKeyframes 0.7s infinite;
+}
