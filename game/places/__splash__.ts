@@ -48,6 +48,7 @@ if (game.state.currentPlace != "__start__") {
        // await loadGame()
         game.start();
     })    
+    //something
 }
 
 */
