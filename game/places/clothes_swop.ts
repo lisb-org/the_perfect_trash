@@ -8,5 +8,5 @@ place.get("pile").onOtherDrop(item => {
 })
 
 place.get('swap').onClick(() => { 
-    window.open("https://www.youtube.com/watch?v=H-xR6HCN1Wg");
+    window.open("https://youtu.be/H-xR6HCN1Wg?t=191");
 })
