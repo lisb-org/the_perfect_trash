@@ -5,3 +5,5 @@ place.get('shelf').onClick(() => {
 place.get('away').onClick(() => {
     game.navigate('away')
 })
+
+//navigation page
