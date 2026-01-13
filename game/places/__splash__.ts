@@ -54,7 +54,7 @@ if (game.state.currentPlace != "__start__") {
 */
 
 
-game.preloadResources
+//game.preloadResources
 
 if (game.state.currentPlace != "__start__") {
     // we have already played the game before
