@@ -76,10 +76,6 @@ if (game.state.currentPlace != "__start__") {
     place.get("coverup").hide()
     place.get("t_continue").hide()
 
-
-    //place.get("reset").hide()
-    //place.get("continue").hide()
-
     place.get('play').onClick(async () => {
        // await loadGame()
         game.start();
